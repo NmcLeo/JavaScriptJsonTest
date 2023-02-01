@@ -1,0 +1,228 @@
+# ACTS Test Suite Generation: Thu Feb 17 10:32:40 PST 2022
+#  "(don't care)" represents don't care value 
+# Degree of interaction coverage: 2
+# Number of parameters: 17
+# Maximum number of values per parameter: 2
+# Number of configurations: 10
+------------Test Cases--------------
+
+Configuration #1:
+
+1 = Input_File_CSV=TRUE
+2 = Output_File_JSON=TRUE
+3 = Input_File_Provided=TRUE
+4 = Output_File_Provided=TRUE
+5 = Input_File_Name_Accepted_By_OS=FALSE
+6 = Output_File_Name_Accepted_By_OS=FALSE
+7 = Input_File_Header=FALSE
+8 = Input_File_Entry_Number=5
+9 = Input_File_Contains_Start_White_Spaces=FALSE
+10 = Input_File_Contain_End_White_Spaces=FALSE
+11 = Input_File_Contain_Double_Quotes=FALSE
+12 = Input_File_Contain_One_Double_Quote=FALSE
+13 = Input_File_Contain_Line_Break=FALSE
+14 = Separator_Provided=TRUE
+15 = Separator_Value_Same=FALSE
+16 = Dynamic_Typing_Provided=TRUE
+17 = Dynamic_Typing=FALSE
+
+-------------------------------------
+
+Configuration #2:
+
+1 = Input_File_CSV=TRUE
+2 = Output_File_JSON=FALSE
+3 = Input_File_Provided=TRUE
+4 = Output_File_Provided=TRUE
+5 = Input_File_Name_Accepted_By_OS=TRUE
+6 = Output_File_Name_Accepted_By_OS=TRUE
+7 = Input_File_Header=TRUE
+8 = Input_File_Entry_Number=5
+9 = Input_File_Contains_Start_White_Spaces=TRUE
+10 = Input_File_Contain_End_White_Spaces=TRUE
+11 = Input_File_Contain_Double_Quotes=TRUE
+12 = Input_File_Contain_One_Double_Quote=TRUE
+13 = Input_File_Contain_Line_Break=TRUE
+14 = Separator_Provided=TRUE
+15 = Separator_Value_Same=TRUE
+16 = Dynamic_Typing_Provided=TRUE
+17 = Dynamic_Typing=TRUE
+
+-------------------------------------
+
+Configuration #3:
+
+1 = Input_File_CSV=FALSE
+2 = Output_File_JSON=TRUE
+3 = Input_File_Provided=TRUE
+4 = Output_File_Provided=TRUE
+5 = Input_File_Name_Accepted_By_OS=TRUE
+6 = Output_File_Name_Accepted_By_OS=FALSE
+7 = Input_File_Header=TRUE
+8 = Input_File_Entry_Number=5
+9 = Input_File_Contains_Start_White_Spaces=FALSE
+10 = Input_File_Contain_End_White_Spaces=TRUE
+11 = Input_File_Contain_Double_Quotes=FALSE
+12 = Input_File_Contain_One_Double_Quote=TRUE
+13 = Input_File_Contain_Line_Break=FALSE
+14 = Separator_Provided=TRUE
+15 = Separator_Value_Same=TRUE
+16 = Dynamic_Typing_Provided=TRUE
+17 = Dynamic_Typing=FALSE
+
+-------------------------------------
+
+Configuration #4:
+
+1 = Input_File_CSV=FALSE
+2 = Output_File_JSON=FALSE
+3 = Input_File_Provided=TRUE
+4 = Output_File_Provided=TRUE
+5 = Input_File_Name_Accepted_By_OS=FALSE
+6 = Output_File_Name_Accepted_By_OS=TRUE
+7 = Input_File_Header=FALSE
+8 = Input_File_Entry_Number=5
+9 = Input_File_Contains_Start_White_Spaces=TRUE
+10 = Input_File_Contain_End_White_Spaces=FALSE
+11 = Input_File_Contain_Double_Quotes=TRUE
+12 = Input_File_Contain_One_Double_Quote=FALSE
+13 = Input_File_Contain_Line_Break=TRUE
+14 = Separator_Provided=TRUE
+15 = Separator_Value_Same=FALSE
+16 = Dynamic_Typing_Provided=TRUE
+17 = Dynamic_Typing=TRUE
+
+-------------------------------------
+
+Configuration #5:
+
+1 = Input_File_CSV=FALSE
+2 = Output_File_JSON=TRUE
+3 = Input_File_Provided=TRUE
+4 = Output_File_Provided=TRUE
+5 = Input_File_Name_Accepted_By_OS=FALSE
+6 = Output_File_Name_Accepted_By_OS=TRUE
+7 = Input_File_Header=TRUE
+8 = Input_File_Entry_Number=5
+9 = Input_File_Contains_Start_White_Spaces=FALSE
+10 = Input_File_Contain_End_White_Spaces=TRUE
+11 = Input_File_Contain_Double_Quotes=TRUE
+12 = Input_File_Contain_One_Double_Quote=FALSE
+13 = Input_File_Contain_Line_Break=FALSE
+14 = Separator_Provided=TRUE
+15 = Separator_Value_Same=TRUE
+16 = Dynamic_Typing_Provided=TRUE
+17 = Dynamic_Typing=TRUE
+
+-------------------------------------
+
+Configuration #6:
+
+1 = Input_File_CSV=FALSE
+2 = Output_File_JSON=FALSE
+3 = Input_File_Provided=TRUE
+4 = Output_File_Provided=TRUE
+5 = Input_File_Name_Accepted_By_OS=TRUE
+6 = Output_File_Name_Accepted_By_OS=FALSE
+7 = Input_File_Header=FALSE
+8 = Input_File_Entry_Number=5
+9 = Input_File_Contains_Start_White_Spaces=TRUE
+10 = Input_File_Contain_End_White_Spaces=FALSE
+11 = Input_File_Contain_Double_Quotes=FALSE
+12 = Input_File_Contain_One_Double_Quote=TRUE
+13 = Input_File_Contain_Line_Break=TRUE
+14 = Separator_Provided=TRUE
+15 = Separator_Value_Same=FALSE
+16 = Dynamic_Typing_Provided=TRUE
+17 = Dynamic_Typing=FALSE
+
+-------------------------------------
+
+Configuration #7:
+
+1 = Input_File_CSV=FALSE
+2 = Output_File_JSON=TRUE
+3 = Input_File_Provided=TRUE
+4 = Output_File_Provided=TRUE
+5 = Input_File_Name_Accepted_By_OS=FALSE
+6 = Output_File_Name_Accepted_By_OS=FALSE
+7 = Input_File_Header=FALSE
+8 = Input_File_Entry_Number=5
+9 = Input_File_Contains_Start_White_Spaces=TRUE
+10 = Input_File_Contain_End_White_Spaces=TRUE
+11 = Input_File_Contain_Double_Quotes=TRUE
+12 = Input_File_Contain_One_Double_Quote=TRUE
+13 = Input_File_Contain_Line_Break=FALSE
+14 = Separator_Provided=TRUE
+15 = Separator_Value_Same=TRUE
+16 = Dynamic_Typing_Provided=TRUE
+17 = Dynamic_Typing=TRUE
+
+-------------------------------------
+
+Configuration #8:
+
+1 = Input_File_CSV=TRUE
+2 = Output_File_JSON=FALSE
+3 = Input_File_Provided=TRUE
+4 = Output_File_Provided=TRUE
+5 = Input_File_Name_Accepted_By_OS=TRUE
+6 = Output_File_Name_Accepted_By_OS=TRUE
+7 = Input_File_Header=TRUE
+8 = Input_File_Entry_Number=5
+9 = Input_File_Contains_Start_White_Spaces=FALSE
+10 = Input_File_Contain_End_White_Spaces=FALSE
+11 = Input_File_Contain_Double_Quotes=FALSE
+12 = Input_File_Contain_One_Double_Quote=FALSE
+13 = Input_File_Contain_Line_Break=TRUE
+14 = Separator_Provided=TRUE
+15 = Separator_Value_Same=FALSE
+16 = Dynamic_Typing_Provided=TRUE
+17 = Dynamic_Typing=FALSE
+
+-------------------------------------
+
+Configuration #9:
+
+1 = Input_File_CSV=TRUE
+2 = Output_File_JSON=TRUE
+3 = Input_File_Provided=TRUE
+4 = Output_File_Provided=TRUE
+5 = Input_File_Name_Accepted_By_OS=FALSE
+6 = Output_File_Name_Accepted_By_OS=FALSE
+7 = Input_File_Header=TRUE
+8 = Input_File_Entry_Number=5
+9 = Input_File_Contains_Start_White_Spaces=TRUE
+10 = Input_File_Contain_End_White_Spaces=FALSE
+11 = Input_File_Contain_Double_Quotes=FALSE
+12 = Input_File_Contain_One_Double_Quote=FALSE
+13 = Input_File_Contain_Line_Break=TRUE
+14 = Separator_Provided=TRUE
+15 = Separator_Value_Same=TRUE
+16 = Dynamic_Typing_Provided=TRUE
+17 = Dynamic_Typing=TRUE
+
+-------------------------------------
+
+Configuration #10:
+
+1 = Input_File_CSV=FALSE
+2 = Output_File_JSON=FALSE
+3 = Input_File_Provided=TRUE
+4 = Output_File_Provided=TRUE
+5 = Input_File_Name_Accepted_By_OS=FALSE
+6 = Output_File_Name_Accepted_By_OS=TRUE
+7 = Input_File_Header=FALSE
+8 = Input_File_Entry_Number=5
+9 = Input_File_Contains_Start_White_Spaces=FALSE
+10 = Input_File_Contain_End_White_Spaces=TRUE
+11 = Input_File_Contain_Double_Quotes=TRUE
+12 = Input_File_Contain_One_Double_Quote=TRUE
+13 = Input_File_Contain_Line_Break=FALSE
+14 = Separator_Provided=TRUE
+15 = Separator_Value_Same=FALSE
+16 = Dynamic_Typing_Provided=TRUE
+17 = Dynamic_Typing=FALSE
+
+-------------------------------------
+

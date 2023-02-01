@@ -1,0 +1,41 @@
+[System]
+-- specify system name
+Name: TCAS
+
+[Parameter]
+-- general syntax is parameter_name (type) : value1, value2, ...
+Input_File_CSV (boolean) : TRUE, FALSE
+Output_File_JSON (boolean) : TRUE, FALSE
+Input_File_Provided (boolean) : TRUE, FALSE
+Output_File_Provided (boolean) : TRUE, FALSE
+Input_File_Name_Accepted_By_OS (boolean) : TRUE, FALSE
+Output_File_Name_Accepted_By_OS (boolean) : TRUE, FALSE
+Input_File_Header (boolean) : TRUE, FALSE
+Input_File_Entry_Number (int) : 0, 5
+Input_File_Contains_Start_White_Spaces (boolean) : TRUE, FALSE
+Input_File_Contain_End_White_Spaces (boolean) : TRUE, FALSE
+Input_File_Contain_Double_Quotes (boolean) : TRUE, FALSE
+Input_File_Contain_One_Double_Quote (boolean) : TRUE, FALSE
+Input_File_Contain_Line_Break (boolean) : TRUE, FALSE
+Separator_Provided (boolean) : TRUE, FALSE
+Separator_Value_Same (boolean) : TRUE, FALSE
+Dynamic_Typing_Provided (boolean) : TRUE, FALSE
+Dynamic_Typing (boolean) : TRUE, FALSE
+
+
+[Constraint]
+(Input_File_CSV = TRUE || Input_File_CSV = FALSE) => Input_File_Provided = TRUE
+(Input_File_Name_Accepted_By_OS = TRUE || Input_File_Name_Accepted_By_OS = FALSE) => Input_File_Provided = TRUE
+(Input_File_Entry_Number = 0 || Input_File_Entry_Number > 0) => Input_File_Provided = TRUE
+(Input_File_Header = TRUE || Input_File_Header = FALSE) => Input_File_Provided = TRUE
+(Input_File_Contains_Start_White_Spaces = TRUE || Input_File_Contains_Start_White_Spaces = FALSE) => Input_File_Provided = TRUE
+(Input_File_Contain_End_White_Spaces = TRUE || Input_File_Contain_End_White_Spaces = FALSE) => Input_File_Provided = TRUE
+(Input_File_Contain_Double_Quotes = TRUE || Input_File_Contain_Double_Quotes = FALSE) => Input_File_Provided = TRUE
+(Input_File_Contain_One_Double_Quote = TRUE || Input_File_Contain_One_Double_Quote = FALSE) => Input_File_Provided = TRUE
+(Input_File_Contain_Line_Break = TRUE || Input_File_Contain_Line_Break = FALSE) => Input_File_Provided = TRUE
+Input_File_Provided = FALSE => (Input_File_CSV = FALSE && Input_File_Name_Accepted_By_OS = FALSE && Input_File_Entry_Number = 0 && Input_File_Header = FALSE && Input_File_Contains_Start_White_Spaces = FALSE && Input_File_Contain_End_White_Spaces = FALSE && Input_File_Contain_Double_Quotes = FALSE && Input_File_Contain_One_Double_Quote = FALSE && Input_File_Contain_Line_Break = FALSE)
+Input_File_Entry_Number = 0 => (Separator_Provided = FALSE && Dynamic_Typing_Provided = FALSE && Input_File_Contains_Start_White_Spaces = FALSE && Input_File_Contain_End_White_Spaces = FALSE && Input_File_Contain_Double_Quotes = FALSE && Input_File_Contain_One_Double_Quote = FALSE && Input_File_Contain_Line_Break = FALSE)
+(Output_File_JSON = TRUE || Output_File_JSON = FALSE) => Output_File_Provided = TRUE
+(Output_File_Name_Accepted_By_OS = TRUE || Output_File_Name_Accepted_By_OS = FALSE) => Output_File_Provided = TRUE
+(Dynamic_Typing = TRUE || Dynamic_Typing = FALSE) => Dynamic_Typing_Provided = TRUE
+(Separator_Value_Same = TRUE || Separator_Value_Same = FALSE) => Separator_Provided = TRUE

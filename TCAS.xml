@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<System name="TCAS">
+  <Parameters>
+    <Parameter id="0" name="Input_File_CSV" type="2">
+      <values>
+        <value>TRUE</value>
+        <value>FALSE</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="1" name="Output_File_JSON" type="2">
+      <values>
+        <value>TRUE</value>
+        <value>FALSE</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="2" name="Input_File_Provided" type="2">
+      <values>
+        <value>TRUE</value>
+        <value>FALSE</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="3" name="Output_File_Provided" type="2">
+      <values>
+        <value>TRUE</value>
+        <value>FALSE</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="4" name="Input_File_Name_Accepted_By_OS" type="2">
+      <values>
+        <value>TRUE</value>
+        <value>FALSE</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="5" name="Output_File_Name_Accepted_By_OS" type="2">
+      <values>
+        <value>TRUE</value>
+        <value>FALSE</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="6" name="Input_File_Header" type="2">
+      <values>
+        <value>TRUE</value>
+        <value>FALSE</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="7" name="Input_File_Entry_Number" type="0">
+      <values>
+        <value>0</value>
+        <value>5</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="8" name="Input_File_Contains_Start_White_Spaces" type="2">
+      <values>
+        <value>TRUE</value>
+        <value>FALSE</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="9" name="Input_File_Contain_End_White_Spaces" type="2">
+      <values>
+        <value>TRUE</value>
+        <value>FALSE</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="10" name="Input_File_Contain_Double_Quotes" type="2">
+      <values>
+        <value>TRUE</value>
+        <value>FALSE</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="11" name="Input_File_Contain_One_Double_Quote" type="2">
+      <values>
+        <value>TRUE</value>
+        <value>FALSE</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="12" name="Input_File_Contain_Line_Break" type="2">
+      <values>
+        <value>TRUE</value>
+        <value>FALSE</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="13" name="Separator_Provided" type="2">
+      <values>
+        <value>TRUE</value>
+        <value>FALSE</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="14" name="Separator_Value_Same" type="2">
+      <values>
+        <value>TRUE</value>
+        <value>FALSE</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="15" name="Dynamic_Typing_Provided" type="2">
+      <values>
+        <value>TRUE</value>
+        <value>FALSE</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="16" name="Dynamic_Typing" type="2">
+      <values>
+        <value>TRUE</value>
+        <value>FALSE</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+  </Parameters>
+  <OutputParameters />
+  <Relations />
+  <Constraints>
+    <Constraint text="(Input_File_CSV = TRUE || Input_File_CSV = FALSE) =&gt; Input_File_Provided = TRUE">
+      <Parameters>
+        <Parameter name="Input_File_CSV" />
+        <Parameter name="Input_File_CSV" />
+        <Parameter name="Input_File_Provided" />
+      </Parameters>
+    </Constraint>
+    <Constraint text="(Input_File_Name_Accepted_By_OS = TRUE || Input_File_Name_Accepted_By_OS = FALSE) =&gt; Input_File_Provided = TRUE">
+      <Parameters>
+        <Parameter name="Input_File_Name_Accepted_By_OS" />
+        <Parameter name="Input_File_Name_Accepted_By_OS" />
+        <Parameter name="Input_File_Provided" />
+      </Parameters>
+    </Constraint>
+    <Constraint text="(Input_File_Entry_Number = 0 || Input_File_Entry_Number &gt; 0) =&gt; Input_File_Provided = TRUE">
+      <Parameters>
+        <Parameter name="Input_File_Entry_Number" />
+        <Parameter name="Input_File_Entry_Number" />
+        <Parameter name="Input_File_Provided" />
+      </Parameters>
+    </Constraint>
+    <Constraint text="(Input_File_Header = TRUE || Input_File_Header = FALSE) =&gt; Input_File_Provided = TRUE">
+      <Parameters>
+        <Parameter name="Input_File_Header" />
+        <Parameter name="Input_File_Header" />
+        <Parameter name="Input_File_Provided" />
+      </Parameters>
+    </Constraint>
+    <Constraint text="(Input_File_Contains_Start_White_Spaces = TRUE || Input_File_Contains_Start_White_Spaces = FALSE) =&gt; Input_File_Provided = TRUE">
+      <Parameters>
+        <Parameter name="Input_File_Contains_Start_White_Spaces" />
+        <Parameter name="Input_File_Contains_Start_White_Spaces" />
+        <Parameter name="Input_File_Provided" />
+      </Parameters>
+    </Constraint>
+    <Constraint text="(Input_File_Contain_End_White_Spaces = TRUE || Input_File_Contain_End_White_Spaces = FALSE) =&gt; Input_File_Provided = TRUE">
+      <Parameters>
+        <Parameter name="Input_File_Contain_End_White_Spaces" />
+        <Parameter name="Input_File_Contain_End_White_Spaces" />
+        <Parameter name="Input_File_Provided" />
+      </Parameters>
+    </Constraint>
+    <Constraint text="(Input_File_Contain_Double_Quotes = TRUE || Input_File_Contain_Double_Quotes = FALSE) =&gt; Input_File_Provided = TRUE">
+      <Parameters>
+        <Parameter name="Input_File_Contain_Double_Quotes" />
+        <Parameter name="Input_File_Contain_Double_Quotes" />
+        <Parameter name="Input_File_Provided" />
+      </Parameters>
+    </Constraint>
+    <Constraint text="(Input_File_Contain_One_Double_Quote = TRUE || Input_File_Contain_One_Double_Quote = FALSE) =&gt; Input_File_Provided = TRUE">
+      <Parameters>
+        <Parameter name="Input_File_Contain_One_Double_Quote" />
+        <Parameter name="Input_File_Contain_One_Double_Quote" />
+        <Parameter name="Input_File_Provided" />
+      </Parameters>
+    </Constraint>
+    <Constraint text="(Input_File_Contain_Line_Break = TRUE || Input_File_Contain_Line_Break = FALSE) =&gt; Input_File_Provided = TRUE">
+      <Parameters>
+        <Parameter name="Input_File_Contain_Line_Break" />
+        <Parameter name="Input_File_Contain_Line_Break" />
+        <Parameter name="Input_File_Provided" />
+      </Parameters>
+    </Constraint>
+    <Constraint text="Input_File_Provided = FALSE =&gt; (Input_File_CSV = FALSE &amp;&amp; Input_File_Name_Accepted_By_OS = FALSE &amp;&amp; Input_File_Entry_Number = 0 &amp;&amp; Input_File_Header = FALSE &amp;&amp; Input_File_Contains_Start_White_Spaces = FALSE &amp;&amp; Input_File_Contain_End_White_Spaces = FALSE &amp;&amp; Input_File_Contain_Double_Quotes = FALSE &amp;&amp; Input_File_Contain_One_Double_Quote = FALSE &amp;&amp; Input_File_Contain_Line_Break = FALSE)">
+      <Parameters>
+        <Parameter name="Input_File_Provided" />
+        <Parameter name="Input_File_CSV" />
+        <Parameter name="Input_File_Name_Accepted_By_OS" />
+        <Parameter name="Input_File_Entry_Number" />
+        <Parameter name="Input_File_Header" />
+        <Parameter name="Input_File_Contains_Start_White_Spaces" />
+        <Parameter name="Input_File_Contain_End_White_Spaces" />
+        <Parameter name="Input_File_Contain_Double_Quotes" />
+        <Parameter name="Input_File_Contain_One_Double_Quote" />
+        <Parameter name="Input_File_Contain_Line_Break" />
+      </Parameters>
+    </Constraint>
+    <Constraint text="Input_File_Entry_Number = 0 =&gt; (Separator_Provided = FALSE &amp;&amp; Dynamic_Typing_Provided = FALSE &amp;&amp; Input_File_Contains_Start_White_Spaces = FALSE &amp;&amp; Input_File_Contain_End_White_Spaces = FALSE &amp;&amp; Input_File_Contain_Double_Quotes = FALSE &amp;&amp; Input_File_Contain_One_Double_Quote = FALSE &amp;&amp; Input_File_Contain_Line_Break = FALSE)">
+      <Parameters>
+        <Parameter name="Input_File_Entry_Number" />
+        <Parameter name="Separator_Provided" />
+        <Parameter name="Dynamic_Typing_Provided" />
+        <Parameter name="Input_File_Contains_Start_White_Spaces" />
+        <Parameter name="Input_File_Contain_End_White_Spaces" />
+        <Parameter name="Input_File_Contain_Double_Quotes" />
+        <Parameter name="Input_File_Contain_One_Double_Quote" />
+        <Parameter name="Input_File_Contain_Line_Break" />
+      </Parameters>
+    </Constraint>
+    <Constraint text="(Output_File_JSON = TRUE || Output_File_JSON = FALSE) =&gt; Output_File_Provided = TRUE">
+      <Parameters>
+        <Parameter name="Output_File_JSON" />
+        <Parameter name="Output_File_JSON" />
+        <Parameter name="Output_File_Provided" />
+      </Parameters>
+    </Constraint>
+    <Constraint text="(Output_File_Name_Accepted_By_OS = TRUE || Output_File_Name_Accepted_By_OS = FALSE) =&gt; Output_File_Provided = TRUE">
+      <Parameters>
+        <Parameter name="Output_File_Name_Accepted_By_OS" />
+        <Parameter name="Output_File_Name_Accepted_By_OS" />
+        <Parameter name="Output_File_Provided" />
+      </Parameters>
+    </Constraint>
+    <Constraint text="(Dynamic_Typing = TRUE || Dynamic_Typing = FALSE) =&gt; Dynamic_Typing_Provided = TRUE">
+      <Parameters>
+        <Parameter name="Dynamic_Typing" />
+        <Parameter name="Dynamic_Typing" />
+        <Parameter name="Dynamic_Typing_Provided" />
+      </Parameters>
+    </Constraint>
+    <Constraint text="(Separator_Value_Same = TRUE || Separator_Value_Same = FALSE) =&gt; Separator_Provided = TRUE">
+      <Parameters>
+        <Parameter name="Separator_Value_Same" />
+        <Parameter name="Separator_Value_Same" />
+        <Parameter name="Separator_Provided" />
+      </Parameters>
+    </Constraint>
+  </Constraints>
+  <Testset doi="2">
+    <Testcase TCNo="0">
+      <Value>1</Value>
+      <Value>TRUE</Value>
+      <Value>TRUE</Value>
+      <Value>TRUE</Value>
+      <Value>TRUE</Value>
+      <Value>FALSE</Value>
+      <Value>FALSE</Value>
+      <Value>FALSE</Value>
+      <Value>5</Value>
+      <Value>FALSE</Value>
+      <Value>FALSE</Value>
+      <Value>FALSE</Value>
+      <Value>FALSE</Value>
+      <Value>FALSE</Value>
+      <Value>TRUE</Value>
+      <Value>FALSE</Value>
+      <Value>TRUE</Value>
+      <Value>FALSE</Value>
+    </Testcase>
+    <Testcase TCNo="1">
+      <Value>2</Value>
+      <Value>TRUE</Value>
+      <Value>FALSE</Value>
+      <Value>TRUE</Value>
+      <Value>TRUE</Value>
+      <Value>TRUE</Value>
+      <Value>TRUE</Value>
+      <Value>TRUE</Value>
+      <Value>5</Value>
+      <Value>TRUE</Value>
+      <Value>TRUE</Value>
+      <Value>TRUE</Value>
+      <Value>TRUE</Value>
+      <Value>TRUE</Value>
+      <Value>TRUE</Value>
+      <Value>TRUE</Value>
+      <Value>TRUE</Value>
+      <Value>TRUE</Value>
+    </Testcase>
+    <Testcase TCNo="2">
+      <Value>3</Value>
+      <Value>FALSE</Value>
+      <Value>TRUE</Value>
+      <Value>TRUE</Value>
+      <Value>TRUE</Value>
+      <Value>TRUE</Value>
+      <Value>FALSE</Value>
+      <Value>TRUE</Value>
+      <Value>5</Value>
+      <Value>FALSE</Value>
+      <Value>TRUE</Value>
+      <Value>FALSE</Value>
+      <Value>TRUE</Value>
+      <Value>FALSE</Value>
+      <Value>TRUE</Value>
+      <Value>TRUE</Value>
+      <Value>TRUE</Value>
+      <Value>FALSE</Value>
+    </Testcase>
+    <Testcase TCNo="3">
+      <Value>4</Value>
+      <Value>FALSE</Value>
+      <Value>FALSE</Value>
+      <Value>TRUE</Value>
+      <Value>TRUE</Value>
+      <Value>FALSE</Value>
+      <Value>TRUE</Value>
+      <Value>FALSE</Value>
+      <Value>5</Value>
+      <Value>TRUE</Value>
+      <Value>FALSE</Value>
+      <Value>TRUE</Value>
+      <Value>FALSE</Value>
+      <Value>TRUE</Value>
+      <Value>TRUE</Value>
+      <Value>FALSE</Value>
+      <Value>TRUE</Value>
+      <Value>TRUE</Value>
+    </Testcase>
+    <Testcase TCNo="4">
+      <Value>5</Value>
+      <Value>FALSE</Value>
+      <Value>TRUE</Value>
+      <Value>TRUE</Value>
+      <Value>TRUE</Value>
+      <Value>FALSE</Value>
+      <Value>TRUE</Value>
+      <Value>TRUE</Value>
+      <Value>5</Value>
+      <Value>FALSE</Value>
+      <Value>TRUE</Value>
+      <Value>TRUE</Value>
+      <Value>FALSE</Value>
+      <Value>FALSE</Value>
+      <Value>TRUE</Value>
+      <Value>TRUE</Value>
+      <Value>TRUE</Value>
+      <Value>TRUE</Value>
+    </Testcase>
+    <Testcase TCNo="5">
+      <Value>6</Value>
+      <Value>FALSE</Value>
+      <Value>FALSE</Value>
+      <Value>TRUE</Value>
+      <Value>TRUE</Value>
+      <Value>TRUE</Value>
+      <Value>FALSE</Value>
+      <Value>FALSE</Value>
+      <Value>5</Value>
+      <Value>TRUE</Value>
+      <Value>FALSE</Value>
+      <Value>FALSE</Value>
+      <Value>TRUE</Value>
+      <Value>TRUE</Value>
+      <Value>TRUE</Value>
+      <Value>FALSE</Value>
+      <Value>TRUE</Value>
+      <Value>FALSE</Value>
+    </Testcase>
+    <Testcase TCNo="6">
+      <Value>7</Value>
+      <Value>FALSE</Value>
+      <Value>TRUE</Value>
+      <Value>TRUE</Value>
+      <Value>TRUE</Value>
+      <Value>FALSE</Value>
+      <Value>FALSE</Value>
+      <Value>FALSE</Value>
+      <Value>5</Value>
+      <Value>TRUE</Value>
+      <Value>TRUE</Value>
+      <Value>TRUE</Value>
+      <Value>TRUE</Value>
+      <Value>FALSE</Value>
+      <Value>TRUE</Value>
+      <Value>TRUE</Value>
+      <Value>TRUE</Value>
+      <Value>TRUE</Value>
+    </Testcase>
+    <Testcase TCNo="7">
+      <Value>8</Value>
+      <Value>TRUE</Value>
+      <Value>FALSE</Value>
+      <Value>TRUE</Value>
+      <Value>TRUE</Value>
+      <Value>TRUE</Value>
+      <Value>TRUE</Value>
+      <Value>TRUE</Value>
+      <Value>5</Value>
+      <Value>FALSE</Value>
+      <Value>FALSE</Value>
+      <Value>FALSE</Value>
+      <Value>FALSE</Value>
+      <Value>TRUE</Value>
+      <Value>TRUE</Value>
+      <Value>FALSE</Value>
+      <Value>TRUE</Value>
+      <Value>FALSE</Value>
+    </Testcase>
+    <Testcase TCNo="8">
+      <Value>9</Value>
+      <Value>TRUE</Value>
+      <Value>TRUE</Value>
+      <Value>TRUE</Value>
+      <Value>TRUE</Value>
+      <Value>FALSE</Value>
+      <Value>FALSE</Value>
+      <Value>TRUE</Value>
+      <Value>5</Value>
+      <Value>TRUE</Value>
+      <Value>FALSE</Value>
+      <Value>FALSE</Value>
+      <Value>FALSE</Value>
+      <Value>TRUE</Value>
+      <Value>TRUE</Value>
+      <Value>TRUE</Value>
+      <Value>TRUE</Value>
+      <Value>TRUE</Value>
+    </Testcase>
+    <Testcase TCNo="9">
+      <Value>10</Value>
+      <Value>FALSE</Value>
+      <Value>FALSE</Value>
+      <Value>TRUE</Value>
+      <Value>TRUE</Value>
+      <Value>FALSE</Value>
+      <Value>TRUE</Value>
+      <Value>FALSE</Value>
+      <Value>5</Value>
+      <Value>FALSE</Value>
+      <Value>TRUE</Value>
+      <Value>TRUE</Value>
+      <Value>TRUE</Value>
+      <Value>FALSE</Value>
+      <Value>TRUE</Value>
+      <Value>FALSE</Value>
+      <Value>TRUE</Value>
+      <Value>FALSE</Value>
+    </Testcase>
+  </Testset>
+  <Header>
+    <Value />
+    <Value>INPUT_FILE_CSV</Value>
+    <Value>OUTPUT_FILE_JSON</Value>
+    <Value>INPUT_FILE_PROVIDED</Value>
+    <Value>OUTPUT_FILE_PROVIDED</Value>
+    <Value>INPUT_FILE_NAME_ACCEPTED_BY_OS</Value>
+    <Value>OUTPUT_FILE_NAME_ACCEPTED_BY_OS</Value>
+    <Value>INPUT_FILE_HEADER</Value>
+    <Value>INPUT_FILE_ENTRY_NUMBER</Value>
+    <Value>INPUT_FILE_CONTAINS_START_WHITE_SPACES</Value>
+    <Value>INPUT_FILE_CONTAIN_END_WHITE_SPACES</Value>
+    <Value>INPUT_FILE_CONTAIN_DOUBLE_QUOTES</Value>
+    <Value>INPUT_FILE_CONTAIN_ONE_DOUBLE_QUOTE</Value>
+    <Value>INPUT_FILE_CONTAIN_LINE_BREAK</Value>
+    <Value>SEPARATOR_PROVIDED</Value>
+    <Value>SEPARATOR_VALUE_SAME</Value>
+    <Value>DYNAMIC_TYPING_PROVIDED</Value>
+    <Value>DYNAMIC_TYPING</Value>
+  </Header>
+  <Stat-Data>
+    <ExecutionTime>0.097</ExecutionTime>
+    <MaxDomainSize>2</MaxDomainSize>
+    <MinDomainSize>2</MinDomainSize>
+    <TotalNoOfCombination>394</TotalNoOfCombination>
+    <TotalNoOfTests>10</TotalNoOfTests>
+    <Algorithm>IPOG</Algorithm>
+  </Stat-Data>
+</System>
+
